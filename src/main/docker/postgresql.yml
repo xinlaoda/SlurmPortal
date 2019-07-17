@@ -1,0 +1,11 @@
+version: '2'
+services:
+  slurmportal-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/SlurmPortal/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=SlurmPortal
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
